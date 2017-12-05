@@ -1,0 +1,264 @@
+= 1.7.1: September 29, 2016 =
+
+Fix: Bump asset version numbers to help caches move on.
+Fix: Revert “sticky footer” implementation due to issues with Internet Explorer.
+Fix: Avoid conflicts with Google PageSpeed and custom header images.
+Fix: Restore rotation CSS for loading icons.
+Fix: Invalid box-shadow CSS syntax on primary header.
+
+
+= 1.7.0: September 21, 2016 =
+
+New: Add live-reload for style and typography changes.
+New: Updated design for the Login and Register pages/modals.
+New: Updated design for the Bookmarks count in grid results.
+New: Updated design for WooCommerce Bookings widget.
+New: Widgetized Author profile pages. Manage widgets in Appearance > Widgets
+New: Recent Blog posts by author on profile pages.
+New: Add WP Job Manager – Stats to content importer.
+New: Add WP Job Manager – Claim Listing to content importer.
+New: Initial suggestions when adding a color or icon to a category in the Customizer.
+New: Allow limitations based on location or category to the “Related Listings” widget.
+New: Option to open the Call to Action link in a popup.
+New: Sticky footer on short screens.
+New: Option to disable location autocomplete on search filters.
+New: Use FacetWP search field when searching in the site header.
+New: Display full address instead of coordinates when requesting directions.
+Fix: Center map on FacetWP location with no results.
+Fix: FacetWP mega menu sorting.
+Fix: WooCommerce redirect to shop page on certain author profiles.
+Fix: German translation on account-signin.php template.
+Fix: Update input heights to be consistent across all types.
+
+
+= 1.6.3: September 8, 2016 =
+
+Fix: Force version 3 of the Google Maps API. Allow arguments to be filtered.
+
+
+= 1.6.2: August 19, 2016 =
+
+Fix: Add hardening to gallery file uploads to prevent unexpected file types. Previously, other WP-allowed types were sometimes accepted.
+
+
+= 1.6.1: August 13, 2016 =
+
+Fix: Potentially disappearing map on homepage or mobile device sizes.
+Fix: Javascript error in Theme Customizer on Map Appearance control.
+Fix: Remove background color on filters when using “Boxless” display style.
+
+
+= 1.6.0: August 3, 2016 =
+
+New: Automatic content importer: quickly and easily install demo menus, pages, widgets, settings, and more. Get up in running in minutes.
+New: Child theme creator: create a child theme while maintaining any customized options.
+New: Automatic updates: one-click automatic theme updates directly from ThemeForest.net.
+New: Transparent fixed header for the Homepage hero area in Customize > Content > Home
+New: Choose the size of a page’s title area from the Edit Page screen.
+New: Allow listing map to appear on the right side of the screen in Customize > Listings > Search Page
+New: Allow default mobile view to be changed in Customize > Listings > Search Page
+New: Allow listing filter content box style to be set in Customize > Listings > Search Filters
+New: Allow listing filter meta information to be toggled in Customize > Listings > Search Filters
+Fix: WooCommerce 2.6.4 compatibility.
+Fix: PHP7 compatibility.
+Fix: Do not scroll map on mobile until focused.
+Fix: Button colors when using the Outline button style.
+Fix: Avoid extra clusters when using FacetWP.
+Fix: Customizer javascript error in Safari.
+Fix: Ensure cover image can be removed from Edit Listing page.
+Fix: Image aspect ratios on Single Listing Hero Gallery.
+Fix: Don’t output Autocomplete and Locate Me functions with no Google Maps API key.
+Fix: Don’t output single listing map with no Google Maps API key.
+Fix: Remove nested <h2> tag in Homepage Hero area.
+Fix: Full width pricing table on mobile.
+Fix: Let the Google Maps API server key be set separately.
+Fix: Respect “Disable Comments” customizer option in galleries.
+Fix: Disable Jetpack Mobile Theme module.
+Fix: Disable Jetpack Photon module. https://github.com/Automattic/WP-Job-Manager/issues/576
+Fix: Exclude company logo from gallery images.
+
+
+= 1.5.4: July 7, 2016 =
+
+Fix: Update support for WP User Avatar plugin.
+Fix: Update PHP Interface to match class method usage.
+Fix: Pass arguments to mega menu dropdown.
+Fix: Only force WooCommerce tertiary nav menu items when logged out.
+Fix: Pass current site language to any term query.
+Fix: Switch tag icons to term ID instead of slug to avoid inconsistencies.
+Fix: Respect gallery comments customizer option on gallery images.
+Fix: Update map zoom control description to match labels.
+Fix: Allow default center point to always show as this coordinate is returned when no results are found.
+Fix: Use correct class name when checking for the Contact Listing plugin.
+Fix: Don’t redirect to the submit page from Plans & Pricing if there is an error on the page.
+
+
+= 1.5.3: June 28, 2016 =
+
+Google has updated their Google Maps API requirements. All websites must enter a valid API key. For more information on setting up your key please visit: http://listify.astoundify.com/article/856-create-a-google-maps-api-key
+
+Fix: Alert if no Google Maps API key is set.
+Fix: Ensure the Claimed badge is always shown on the listing grid.
+Fix: Default Author widget icon output.
+Fix: Comment rating display logic.
+Fix: Load terms based on current language in mega menu.
+Fix: Avoid PHP error in Tags widget.
+Fix: FacetWP fSelect facet type UI updates.
+
+
+= 1.5.2: June 23, 2016 =
+
+Fix: Register Google Maps script earlier to help avoid potential plugin conflicts.
+Fix: Revert secondary menu output default to true.
+Fix: Avoid PHP notice when no facets are set on the homepage.
+Fix: FacetWP dropdown style in Firefox.
+Fix: Tags should not be wider than the containing widget.
+Fix: Only load load homepage facets when using the Home template.
+Fix: Restore listify_control_group_{group-id} filters.
+Fix: Avoid PHP error in Polylang term shim.
+
+
+= 1.5.1: June 22, 2016 =
+
+Fix: Do not output Featured badge on single listing page.
+Fix: Respect Call to Action widget color settings.
+Fix: Respect As Seen On background color setting.
+Fix: Bump asset version numbers to help caches.
+Fix: Ensure the Listify-specific select2 scripts and styles are always used in the Customizer.
+Fix: Ensure the blog sidebar shows on a fresh install.
+Fix: Ensure the customizer can be closed.
+
+
+= 1.5.0: June 22, 2016 =
+
+New: Improved FacetWP integration.
+Update FacetWP filter styles. Homepage facets now appear on a single line.
+Results page now appear more visually appealing.
+Support for new fSelect facet type.
+Facet display can now easily be managed in “Customize > Listings > Facets”.
+Display extra filters under a “More Filters” area.
+Register default facets and templates for seamless activation.
+New: Improved Map Marker Color and Icon Selection. Greatly improve Customizer performance.
+For more information please review: http://listify.astoundify.com/article/1008-listings-choose-the-map-marker-colors http://listify.astoundify.com/article/1009-listings-choose-the-map-marker-icons
+New: Convert “Call to Action” to widgetized area.
+For more information please review: http://listify.astoundify.com/article/1004-widgetized-page-call-to-action
+New: New featured listing style options.
+For more information please review: http://listify.astoundify.com/article/242-listings-listing-results
+New: Alternate blog layout options.
+For more information please review: http://listify.astoundify.com/article/931-content-blog
+New: Option to output contact email in Map Widget.
+For more information please review: http://listify.astoundify.com/article/931-content-blog
+New: Choose Listing and Homepage hero overlay styles.
+For more information please review: http://listify.astoundify.com/article/1011-content-home http://listify.astoundify.com/article/1012-listings-listing-layout
+New: “Classic” style kit to match https://listify-demos.astoundify.com/classic
+New: WC Social Login 1.8+ compatibility.
+New: WooCommerce 2.6.1 compatibility.
+New: Improved customizer experience.
+New: Selective Refresh for Customizer widgets.
+New: Allow contact author icon to be disabled in the Author widget.
+New: Change style and position of “Claimed” listing icon.
+Fix: Listing by Category widget respect category selections.
+Fix: WP_Widget compatibility for WordPress 4.6.
+Fix: Properly hash listify_cover() transient when using multiple object IDs.
+Fix: Enable/Disable Map Marker autopan.
+Fix: Audit and improve Google structured data.
+Fix: Locally hosted videos appearing 100% width.
+Fix: Remove “Apply” references left over from WP Job Manager.
+Fix: Listing owners cannot review their own listings.
+Fix: Chosen dropdown color in Ultra Dark color scheme.
+Fix: RTL support for Listing Gallery slider.
+Fix: HTML validation errors.
+Fix: Hide autolocation on Chrome and non-SSL websites.
+Fix: Only load Google Map scripts when needed.
+
+
+= 1.4.3: June 14, 2016 =
+
+New: Updated themes XML and widget dummy content files to reflect new “Classic” demo.
+New: WooCommerce 2.6+ compatibility. The new My Account tabs will be shown automatically on the My Account page if no tertiary menu is set.Tertiary menus containing a URL to the My Account page will not be modified and menu items should be managed manually.
+
+
+= 1.4.2: May 26, 2016 =
+
+Fix: Only show selected categories in Category Tabs widget.
+Fix: Avoid PHP notice when Company Image is enabled.
+Fix: Avoid PHP notice when no term is set for the listing.
+Fix: Call get_avatar() for Company Images so plugins can still filter it.
+Fix: Remove default Tag widget in sidebar.
+Fix: Remove any empty term items that may be returned.
+Fix: Update submission form strings.
+
+
+= 1.4.1: May 25, 2016 =
+
+Fix: Various speed and performance improvements.
+Fix: Avoid 404 error when loading map cluster images.
+Fix: Extra arrow on region drop down in submission form.
+
+
+= 1.4.0: May 22, 2016 =
+
+New: Various speed and performance improvements.
+New: Company Logo field. Listings can have a separate company logo image uploaded to be displayed on the listing card.
+New: Listing Card image customizer option. Display the Company Logo or Listing Author avatar.
+New: Single Listing Hero Styles: Standard (featured image) or Gallery Slider.
+New: Recent Posts widget for the homepage.
+New: Option to disable info bubble auto pan on map.
+New: Automatically move to the next submission step coming from the pricing page.
+New: Listing grid design tweaks: move “Favorite” heart to the top right of the card.
+Fix: Tab and term list widgets.
+Fix: Comment sorting.
+Fix: When a location is cleared from search on the homepage do not use radius search when redirected.
+Fix: Only pull images from the current listing on the map popup.
+Fix: Only show “Listing Owner” on comments if the listing is not posted by a guest.
+Fix: Allow icons to be deselected in the customizer.
+Fix: Allow magnific pop-up library to be translated.
+Fix: Setup Guide redirection on initial activation.
+Fix: Calculate map offset dynamically to avoid a gap in certain instances.
+Fix: Remove link from listing package tags.
+Fix: Center radio bullets.
+Fix: Update TGMPA library.
+Fix: Turn off POI for the Mapbox color scheme.
+
+
+= 1.3.2: February 4, 2016 =
+
+Fix: Output correct colors for map markers.
+Fix: Remove limit on mega menu dropdown.
+Fix: Add back default marker color and icons.
+
+
+= 1.3.1: February 1, 2016 =
+
+Fix: Skip fallback check for old set icons. Sites with hundreds of categories could slow down.
+Fix: Cache terms where possible for sites with many categories.
+Fix: Make sure FacetWP controls are still available in the customizer.
+Fix: Proper filter for parsing shortcodes in listing descriptions.
+Fix: WPJM 1.24.0 compatibility.
+Fix: Listing Packages not displaying without Claim Listing plugin active.
+
+
+= 1.3.0: January 30, 2016 =
+
+It’s a new year! and we’ve got lots planned for 2016 for all of our themes including major design and feature improvements to be made to Listify. Nope your eyes aren’t deceiving you, we really are looking prettier today – thanks for noticing. We’ve made many changes to the interface of the Listify theme to start off 2016, with a lot more feature to come!
+
+To say we are excited would be an understatement. In the 1.3.0 release of Listify we’ve added a new Style Kits option that gives power to change the look of your Listify site at just a click of a button, and we’ve added full control over every element of the design in terms of color, button styling, content styling, typography and much more.
+
+Lets dig into what we’ve added:
+
+New: “Style Kits” visit “Appearance > Customize > Style Kits” and make your Listify website unique to you!
+New: “Font Packs” visit “Appearance > Customize > Typography” and adjust the typography of your website.
+New: “Color Schemes” visit “Appearance > Customize > Colors” to see the newly available color schemes.
+New: “Content” options visit “Appearance > Customize > Content” to adjust content layout and display options.
+New: “Listings” options visit “Appearance > Customize > Listings” to adjust new listing options.
+New: “Tags” widget design updates. Visit “Appearance > Customize > Listings > Listing Tags” to set icons for assigned tags.
+New: Show gallery image descriptions if available.
+New: Browse Astoundify WP Job Manager add-ons in “Listings > Add-ons”.
+New: Dynamically register FacetWP template.
+New: More helpful placeholders for inputs.
+New: Setup Guide improvements.
+Fix: Date internationalization for Business Hours widget.
+Fix: FacetWP internationalization options.
+Fix: Revert to standard the_content() call so shortcodes are parsed.
+Fix: Social Login on checkout causing toggle issues on login form.
+Fix: Use https to request geolocation information when using an API key.
