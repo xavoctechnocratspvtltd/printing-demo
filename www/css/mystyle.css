@@ -1,0 +1,13 @@
+ /*Define Your Custom CSS*/
+ 
+ .flat-testimonial img{
+     width:100%;
+     height:120px;
+ }
+ .home-category-section img{
+ width:100%;
+ height:200px !important;
+ }
+ .atk-form-error{
+     color:red;
+ }

@@ -1,0 +1,25 @@
+<div id="{$_name}" style="{$style}" class="{$class} xepan-category-detail">
+  {$Content}
+  {root_wrapper}
+  <div class="row">
+    <div class="col-md-12 col-sm-12 col-lg-12 col-xs-12">
+    {image_wrapper}
+    {/}
+      <div class="category-information">{name_wrapper}
+        <h1> <a href="{$url}">{$name}</a></h1>{/}
+        {description_wrapper}
+        <p>{$category_description}</p>{/}
+        <p>{$counts}</p>{price_wrapper}
+        <div class="row">
+          <div class="col-md-6 col-sm-12 col-lg-6 col-xs-12">
+            <p>Minimum-price: {$min_price}</p>
+          </div>
+          <div class="col-md-6 col-sm-12 col-lg-6 col-xs-12">
+            <p>Maximum-price: {$max_price}</p>
+          </div>
+        </div>{/}
+        <div>{item_count_wrapper} Item-count: {$website_display_item_count}{/}</div>
+      </div>
+    </div>{/}
+  </div>
+</div>
