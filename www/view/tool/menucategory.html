@@ -1,0 +1,19 @@
+
+<div id="{$_name}" class="{$class} " style="{$style}" >
+    <nav id="mainnav" class="mainnav">
+        <ul class="menu">
+        {category_list}
+            {rows}{row}
+            <li class="xshop-category" aria-haspopup="true" data-id='{$id}'>
+                <a href="{$url}">{$name}</a>
+                {nested_category_wrapper}
+                    <ul class="submenu">
+                        {$nested_category}
+                    </ul>
+                {/}
+            </li>
+            {/}{/}
+        {/category_list}
+        </ul>
+    </nav>
+</div>
