@@ -2,17 +2,20 @@
 <div id="{$_name}" class="{$class} row" style="{$style}" >
     {category_list}
     {rows}{row}
-    <div class="col-md-4 col-sm-12 col-xs-12 col-lg-4">
+    <a href="{$url}">
+    <div class="col-md-4 col-sm-12 col-xs-12 col-lg-4" style="margin-bottom: 30px;">
         <div xepan-component="xepan/cms/Tool_Container" emptytext="Container" style="width: 100%; margin: 0px auto;" xepan-component-name="Container" class="xepan-component xepan-sortable-component xepan-cms-container flat-testimonial">
-            <div id="f8b58a7a-f61c-4b44-d43c-326ee0b5c759" xepan-component="xepan/cms/Tool_Image" xepan-component-name="Image" class="xepan-component" style="width: 100%;">
-                <img src="{$cat_image}" style="max-width:100%; height: 100%; width:100%" data-extra-classes="" alt="Image" class="ui-resizable">
-            </div>
+            <!-- <div xepan-component="xepan/cms/Tool_Image" xepan-component-name="Image" class="xepan-component" style="width: 100%;"> -->
+                <img class="categoryimg" src="{$cat_image}" />
+            <!-- </div> -->
             <h6 data-mce-style="text-align: center;" style="text-align: center;">{$name}<br></h6>
-            <p>{$description}</p>
-            <a href="{$url}" style="margin-top: 10px;" data-button-icon-class="fa-arrow-right" data-icon-position="left" xepan-button-label="Shop Now" xepan-button-link="{$url}" xepan-button-link-behavior="0" xepan-component="xepan/cms/Tool_Button" xepan-component-name="Button" class="xepan-button xepan-component custom-btn-links btn  btn-block btn-success" data-extra-classes="btn-block" scrollamount=""><i class="fa fa-arrow-right"></i> Shop Now</a>
+            <button class="btn btn-block">
+                <i class="fa fa-arrow-right"></i> Shop {$name} Now
+            </button>
         </div>
         {$nested_category}
     </div>
+    </a>
     {/}{/}
     {/category_list}
 </div>

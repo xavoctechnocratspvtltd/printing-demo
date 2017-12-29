@@ -25,3 +25,8 @@
 #mainnav a{
 	text-transform: capitalize;
 }
+
+.category-img{
+	width: 290px;
+	height: 200px;
+}
