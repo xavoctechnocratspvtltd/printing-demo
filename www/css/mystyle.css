@@ -4,14 +4,17 @@
      width:100%;
      height:120px;
  }
+ .products h2{
+     font-size: 14px;
+ }
  
  textarea.xshop-designer-text-input{
      height:35px !important;
  }
   
 .home-category-section img{
- 	width:100%;
- 	height:200px !important;
+     width:100%;
+     height:200px !important;
 }
 
 .atk-form-error{
@@ -19,7 +22,7 @@
 }
  
 #mainnav ul.submenu li ul{
-	left:250px !important;
+    left:250px !important;
 }
 
 #mainnav a{
@@ -29,4 +32,17 @@
 .category-img{
 	width: 290px;
 	height: 200px;
+}
+
+.logo {
+  width:200px !important;
+}
+
+.cart-empty {
+  color:#000;
+}
+
+.products .category-name{
+    font-size: 18px;
+    font-weight: bold;
 }
